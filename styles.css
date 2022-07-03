@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300|Raleway+Dots|Lato:300|Inconsolata|Montserrat);
-
 body {
   letter-spacing: 2px;
   font-family: "apercu", sans-serif;
@@ -17,10 +16,9 @@ body {
   height: 100vh;
   z-index: 1;
   overflow-x: hidden;
-  padding-top: 10px;
+  padding-top: 2px;
   color: gray;
 }
-
 .fill p {
   color: gray;
   letter-spacing: 1px;
@@ -33,18 +31,39 @@ body {
   width: 20%;
   float: left;
 }
+@media screen and (max-width: 768px) {
+  #left {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background: white;
+    color: black;
+    padding: 10px;
+    margin-top: 20px;
+  }
+}
 
 #right {
   float: left;
   right: 0;
   width: 60%;
-  padding: 20px 60px;
+  padding: 2px 60px;
 }
-
 #right #rightTitle {
   padding: 5px 0px;
   color: #202121;
   font-weight: bolder;
+}
+@media screen and (max-width: 768px) {
+  #right {
+    width: 100%;
+    padding: 40px;
+    margin-top: 20px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
 }
 
 .centered {
@@ -67,18 +86,15 @@ body {
   margin: 2px auto;
   text-align: left;
 }
-
 .skills .headerText {
-  margin: 10px 2px;
+  margin: 5px 2px;
   padding: 5px;
   font-size: 14px;
 }
-
 .skills .languageBox {
   margin: 2px;
   padding: 0px 25px;
 }
-
 .skills .hr-text {
   font-size: 5px;
   position: relative;
@@ -87,7 +103,6 @@ body {
   background-color: transparent;
   width: 100%;
 }
-
 .skills .hr-text:before {
   content: "";
   background: linear-gradient(to right, transparent, white, transparent);
@@ -97,7 +112,6 @@ body {
   width: 100%;
   height: 1px;
 }
-
 .skills .hr-text:after {
   content: attr(data-content);
   position: relative;
@@ -105,24 +119,19 @@ body {
   padding: 0 0.5em;
   line-height: 1.5em;
   color: green;
-  background-color: 14213d;
+  background-color: #14213d;
 }
-
 .skills li {
   display: inline-block;
   font-size: 14px;
   cursor: pointer;
 }
-
 .skills i {
   font-size: 7px;
 }
-
 .skills a {
   color: inherit;
   /* blue colors for links too */
   text-decoration: inherit;
   /* no underline */
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

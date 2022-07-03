@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300|Raleway+Dots|Lato:300|Inconsolata|Montserrat);
-
+@import './media-queries';
 $title: green;
 $header: #5371e1;
 $detail: white;
@@ -24,7 +24,7 @@ body {
   height: 100vh;
   z-index: 1;
   overflow-x: hidden;
-  padding-top: 10px;
+  padding-top: 2px;
   color: gray;
 
   p {
@@ -39,21 +39,36 @@ body {
   background: $leftBg;
   width: 20%;
   float: left;
+
+  @include mobile {
+    width: 100%;
+    height: fit-content;
+    background: white;
+    color: black;
+    padding: 10px;
+    margin-top: 20px;
+  }
 }
 
 #right {
   float: left;
   right: 0;
   width: 60%;
-  padding: 20px 60px;
+  padding: 2px 60px;
 
   #rightTitle {
     padding: 5px 0px;
     color: #202121;
     font-weight: bolder;
   }
-}
 
+  @include mobile {
+    width: 100%;
+    padding: 40px;
+    margin-top: 20px;
+    height: fit-content;
+  }
+}
 
 .centered {
   margin: 2px;
@@ -78,7 +93,7 @@ body {
   text-align: left;
 
   .headerText {
-    margin: 10px 2px;
+    margin: 5px 2px;
     padding: 5px;
     font-size: 14px;
   }
@@ -113,7 +128,7 @@ body {
       padding: 0 .5em;
       line-height: 1.5em;
       color: $title;
-      background-color: 14213d;
+      background-color: #14213d;
     }
   }
 
