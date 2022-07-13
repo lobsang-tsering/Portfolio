@@ -15,7 +15,7 @@ body {
   min-height: 100%;
   height: 100vh;
   z-index: 1;
-  overflow-x: hidden;
+  overflow: hidden;
   padding-top: 2px;
   color: gray;
 }
@@ -28,6 +28,7 @@ body {
   color: white;
   left: 0;
   background: #14213d;
+  min-width: 20%;
   width: 20%;
   float: left;
 }
@@ -83,7 +84,6 @@ body {
 }
 
 .skills {
-  margin: 2px auto;
   text-align: left;
 }
 .skills .headerText {

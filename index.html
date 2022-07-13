@@ -9,6 +9,47 @@
   <script src="https://kit.fontawesome.com/1a0c1fc172.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lobsang Tsering</title>
+  <style>
+    .button {
+      display: inline-block;
+      border-radius: 5px;
+      border: none;
+      color: #FFFFFF;
+      background-color: grey;
+      text-align: center;
+      font-size: 28px;
+      padding: 5px;
+      width: fit-content;
+      transition: all 0.1s;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .button span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    .button:hover span {
+      padding-right: 25px;
+    }
+
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+  </style>
 </head>
 
 <body>
@@ -211,6 +252,9 @@
       </ul>
     </span>
   </div>
+  <button onclick="window.print()" class="button" style="vertical-align:middle"><span>
+      <i style="font-size: 1em; color: #14213d;" class="fa-solid fa-download"></i>
+    </span></button>
 </body>
 
 </html>
